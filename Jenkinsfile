@@ -1,4 +1,4 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vishwanihar/multibranch.git/'], pipelineTriggers([upstream('docker, dockerinstall, dockerbuild, '), githubPush()])])
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vishwanihar/multibranch.git/'], pipelineTriggers([upstream('docker, dockerinstall, dockerbuild'), githubPush()])])
 node {
  	// Clean workspace before doing anything
     deleteDir()
